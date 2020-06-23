@@ -1,13 +1,11 @@
-import { Fragment } from "react";
-
 import React from 'react'
-import { Logo } from './Resources'
+import './Nav.css'
 
 function Nav() {
   return (
-    <nav class='navBar'>
+    <nav class='Nav-Bar'>
       <div>
-        <img src={Logo}></img>
+        <img class='Logo-Image' src='/Resources/Logo.png' alt='votingslaps-logo'></img>
         <ul>
           <li>Link</li>
           <li>Link</li>

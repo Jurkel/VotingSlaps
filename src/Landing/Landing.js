@@ -3,8 +3,8 @@ import './Landing.css'
 
 function Landing() {
   return (
-    <div class='landingPage'>
-
+    <div class='LandingPage'>
+      
     </div>
   )
   
