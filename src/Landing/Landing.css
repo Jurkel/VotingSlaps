@@ -1,5 +1,26 @@
 .LandingPage {
-  max-height: 450px;
+  height: 550px;
   background-color: rgb(75, 75, 75);
   width: 100%;
+}
+
+.Chart {
+  position: relative;
+  height: 250px;
+  width: 400px;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  top: 15%;
+}
+
+h2 {
+  position: relative;
+  top: 5%;
+  color: white;
+}
+
+.start-button {
+  margin-top: 2%;
+  padding: 5px;
 }
