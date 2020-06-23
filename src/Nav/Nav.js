@@ -1,11 +1,13 @@
 import { Fragment } from "react";
 
 import React from 'react'
+import { Logo } from './Resources'
 
 function Nav() {
   return (
-    <nav>
-      <div class='navBar'>
+    <nav class='navBar'>
+      <div>
+        <img src={Logo}></img>
         <ul>
           <li>Link</li>
           <li>Link</li>
