@@ -11,12 +11,13 @@ import Footer from '../Footer/Footer'
 
 function Home() {
   return (
-    <div>
-        <Nav/>
-        <Landing/>
-        <Dropdown/>
-        <VotingInfo/>
-        <Footer/>
+    
+    <div class='Home'>
+        <Nav />
+        <Landing />
+        <Dropdown />
+        <VotingInfo />
+        <Footer />
 
         {/* <Switch>
           <Route exact path='/' component={App} />
@@ -24,6 +25,7 @@ function Home() {
           <Route path='/how-to-vote' component={HowToVote} />
           <Route path='/register' component={Register} />
         </Switch> */}
+        
       
     </div>
   )
