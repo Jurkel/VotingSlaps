@@ -4,7 +4,9 @@ function HowToVote() {
   return (
     <div>
       <h2>How To Vote</h2>
+
     </div>
+    
   )
 }
 
