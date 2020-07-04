@@ -82,10 +82,7 @@ function Nav() {
         
     
   )
-  {/* <Route exact path='/' component={Home} />
-  <Route path='/get-informed' component={GetInformed} />
-  <Route path='/how-to-vote' component={HowToVote} />
-  <Route path='/register' component={Register} /> */}
+
 }
 
 export default Nav
