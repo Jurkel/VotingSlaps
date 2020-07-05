@@ -1,11 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Landing.css'
 
 function Landing() {
   return (
       <div class='LandingPage'>
         <h2>GET INFORMED</h2>
-        <button type='button' class='start-button'>Get Started</button>
+        <Link to='/get-informed'>
+          <button type='button' class='start-button'>
+            Start Here
+          </button>
+        </Link>
         <div class='Chart'></div>
       </div>
     

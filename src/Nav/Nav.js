@@ -45,7 +45,7 @@ function Nav() {
               </li>
               <li>
                 <NavLink 
-                  to='/donate'
+                  to='/get-involved'
                   style={{ 
                     fontWeight: 'bold', 
                     color: 'black', 
@@ -55,7 +55,7 @@ function Nav() {
                     textDecoration: 'underline'
                   }}
                 >
-                  DONATE
+                  GET INVOLVED
                 </NavLink>
               </li>
               <li>

@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import './App.css'
 import Footer from '../Footer/Footer'
 import GetInformed from '../Get-Informed/Get-Informed'
-import Donate from '../Donate/Donate'
+import GetInvolved from '../Get-Involved/Get-Involved'
 import Register from '../Register/Register'
 
 class App extends Component {
@@ -23,8 +23,8 @@ class App extends Component {
               <Route path='/get-informed'>
                 <GetInformed />  
               </Route> 
-              <Route path='/donate'>
-                <Donate />
+              <Route path='/get-involved'>
+                <GetInvolved />
               </Route>
               <Route path='/register'>
                 <Register />
