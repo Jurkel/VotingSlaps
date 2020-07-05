@@ -23,7 +23,7 @@ class App extends Component {
               <Route path='/get-informed'>
                 <GetInformed />  
               </Route> 
-              <Route path='/how-to-vote'>
+              <Route path='/donate'>
                 <Donate />
               </Route>
               <Route path='/register'>

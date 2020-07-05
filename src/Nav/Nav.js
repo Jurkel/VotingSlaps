@@ -45,7 +45,7 @@ function Nav() {
               </li>
               <li>
                 <NavLink 
-                  to='/how-to-vote'
+                  to='/donate'
                   style={{ 
                     fontWeight: 'bold', 
                     color: 'black', 
@@ -55,7 +55,7 @@ function Nav() {
                     textDecoration: 'underline'
                   }}
                 >
-                  HOW TO VOTE
+                  DONATE
                 </NavLink>
               </li>
               <li>
