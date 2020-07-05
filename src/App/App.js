@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import './App.css'
 import Footer from '../Footer/Footer'
 import GetInformed from '../Get-Informed/Get-Informed'
-import HowToVote from '../How-To-Vote/How-To-Vote'
+import Donate from '../Donate/Donate'
 import Register from '../Register/Register'
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
                 <GetInformed />  
               </Route> 
               <Route path='/how-to-vote'>
-                <HowToVote />
+                <Donate />
               </Route>
               <Route path='/register'>
                 <Register />
