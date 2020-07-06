@@ -1,0 +1,16 @@
+.get-involved {
+  border: 1px solid black;
+  height: 450px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  margin-top: 45px;
+}
+
+.get-involved > ul {
+  display: flex;
+  flex-direction: column;
+  right: 34%;
+}
+
