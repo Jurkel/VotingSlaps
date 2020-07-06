@@ -3,7 +3,7 @@ import './VotingInfo.css'
 
 function VotingInfo() {
   return (
-    <div class='VotingInfo'>
+    <div className='VotingInfo'>
       <p>Text</p>
     </div>
   )

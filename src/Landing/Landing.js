@@ -4,14 +4,14 @@ import './Landing.css'
 
 function Landing() {
   return (
-      <div class='LandingPage'>
+      <div className='LandingPage'>
         <h2>GET INFORMED</h2>
         <Link to='/get-informed'>
-          <button type='button' class='start-button'>
+          <button type='button' className='start-button'>
             Start Here
           </button>
         </Link>
-        <div class='Chart'></div>
+        <div className='Chart'></div>
       </div>
     
   )

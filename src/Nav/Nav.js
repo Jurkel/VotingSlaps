@@ -9,9 +9,9 @@ import './Nav.css'
 function Nav() {
   return (
     <div>
-    <nav class='Nav-Bar'>
+    <nav className='Nav-Bar'>
         
-          <img class='Logo-Image' src='../Resources/Logo.png' alt='votingslaps-logo'></img>
+          <img className='Logo-Image' src='../Resources/Logo.png' alt='votingslaps-logo'></img>
             <ul>
               <li>
                 <NavLink 

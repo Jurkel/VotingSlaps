@@ -4,9 +4,9 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div class='Footer'>
+    <div className='Footer'>
       <Link to='/register'>
-          <button type='button' class='register-button'>
+          <button type='button' className='register-button'>
             Register to Vote!
           </button>
         </Link>

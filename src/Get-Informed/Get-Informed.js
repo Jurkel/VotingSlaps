@@ -4,11 +4,11 @@ import './Get-Informed.css'
 function GetInformed() {
   return (
     <React.Fragment>
-      <div class='informed-banner'>
+      <div className='informed-banner'>
         Banner Image
       </div>
     
-      <div class='informedStats'>
+      <div className='informedStats'>
         <h2>Get Informed</h2>
         <ol>
           <li>The U.S. has the lowest voter turnout of almost any major country on Earth</li>

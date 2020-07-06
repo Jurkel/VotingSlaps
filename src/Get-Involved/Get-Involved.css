@@ -1,16 +1,9 @@
-.get-involved {
+.involved-container {
   border: 1px solid black;
-  height: 450px;
+  border-radius: 15px;
+  height: 400px;
   width: 75%;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 15px;
-  margin-top: 45px;
+  padding: 45px 20px 10px 20px;
 }
-
-.get-involved > ul {
-  display: flex;
-  flex-direction: column;
-  right: 34%;
-}
-
