@@ -35,7 +35,7 @@ class Dropdown extends React.Component {
             )}
           </select>
           <button type='button' className='search-button'>Search</button>
-          <VotingInfo />
+          <VotingInfo state={this.state.state}/>
         </form>
       </div>
     )

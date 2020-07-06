@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Chart from '../Chart/Chart'
 import './Landing.css'
 
 function Landing() {
@@ -11,7 +12,9 @@ function Landing() {
             Start Here
           </button>
         </Link>
-        <div className='Chart'></div>
+        <div className='Chart'>
+          <Chart />
+        </div>
       </div>
     
   )

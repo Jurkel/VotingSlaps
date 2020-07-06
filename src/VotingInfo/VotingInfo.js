@@ -1,10 +1,10 @@
 import React from 'react'
 import './VotingInfo.css'
 
-function VotingInfo() {
+function VotingInfo(props) {
   return (
     <div className='VotingInfo'>
-      <p>Text</p>
+      <p>{props.children}</p>
     </div>
   )
 }

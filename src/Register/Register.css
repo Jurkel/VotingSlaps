@@ -1,0 +1,20 @@
+.formio-component {
+  padding: 10px;
+}
+
+.col-form-label {
+  font-weight: bold;
+}
+
+.formio-form {
+  border: 1px solid black;
+  border-radius: 15px;
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+}
+
+.form-check {
+  margin-top: 5px;
+}
