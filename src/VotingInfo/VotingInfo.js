@@ -1,5 +1,6 @@
 import React from 'react'
 import './VotingInfo.css'
+// import StateInfo from '../dummy-api'
 
 function VotingInfo(props) {
   return (

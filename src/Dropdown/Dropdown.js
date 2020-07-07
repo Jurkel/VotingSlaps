@@ -9,19 +9,35 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedState: '' 
+      stateInfo: [],
+      id: ''
     }
   }
 
   handleChange = (e) => {
     e.preventDefault()
     this.setState({
-      selectedState: e.target.value
+      id: e.target.value
     })
   }
 
+  renderVotingInfo = (id) => {
+    const { stateInfo } = this.state;
+    return stateInfo.map((item, id) => 
+      <VotingInfo 
+        key={id}
+        state={item.state}
+        generalDate={item.generalDate}
+        earlyVoting={item.earlyVoting}
+        absenteeVoting={item.absenteeVoting}
+        registrationDeadline={item.registrationDeadline}
+        absenteeRequestDeadline={item.absenteeRequestDeadline}
+        absenteeReturnDeadline={item.absenteeReturnDeadline}
+      />
+    )
+  }
+
   render() {
-    const selectedState = this.state.selectedState;
     
     return (
       <div className='Dropdown'>
@@ -36,14 +52,15 @@ class Dropdown extends React.Component {
             {StateInfo.map((state, index) => 
               <option 
                 name='selected_state' 
-                value={state.state}
+                value={state.id}
                 key={index}
               >
                 {state.state}
               </option>
+
             )}
           </select>
-          <VotingInfo state={selectedState}/>
+          {this.renderVotingInfo()}
         </form>
       </div>
     )

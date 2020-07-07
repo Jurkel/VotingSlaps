@@ -1,5 +1,6 @@
 export default [
   {
+    id:0,
     state: 'Ohio',
     generalDate: 'Nov 3, 2020',
     earlyVoting: 'Not available',
@@ -9,6 +10,7 @@ export default [
     absenteeReturnDeadline: 'In-Person, Received by Tue Nov 3, 2020 7:30PM EST'
   },
   {
+    id:1,
     state: 'California',
     generalDate: 'Nov 3, 2020',
     earlyVoting: 'Dates Vary by Locality - Contact your local election office',
@@ -18,6 +20,7 @@ export default [
     absenteeReturnDeadline: 'Hand Delivered by Tue Nov 3, 2020 8:00PM PST'
   },
   {
+    id:2,
     state: 'Texas',
     generalDate: 'Nov 3, 2020',
     earlyVoting: 'Oct 20, 2020 - Oct 31, 2020',
@@ -27,6 +30,7 @@ export default [
     absenteeReturnDeadline: 'Post received by Wed Nov 4, 2020 5:00PM CST'
   },
   {
+    id:3,
     state: 'Florida',
     generalDate: 'Nov 3, 2020',
     earlyVoting: 'Oct 24, 2020 - Oct 31, 2020',
@@ -36,6 +40,7 @@ export default [
     absenteeReturnDeadline: 'Tue Nov 3, 2020 7:00PM EST'
   },
   {
+    id:4,
     state: 'Alabama',
     generalDate: 'Nov 3, 2020',
     earlyVoting: 'Not available',
