@@ -2,8 +2,10 @@
   border: 2px solid black;
   border-radius: 15px;
   width: 40%;
-  height: 450px;
+  height: 550px;
+  text-align: left;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 45px;
+  margin-top: 40px;
+  padding: 20px;
 }

@@ -22,10 +22,14 @@ class Dropdown extends React.Component {
   }
 
   renderVotingInfo = (id) => {
-    const { stateInfo } = this.state;
-    return stateInfo.map((item, id) => 
-      <VotingInfo 
-        key={id}
+    console.log(this.state.id);
+    let stateSelected;
+    let stateId = this.state.id;
+    StateInfo.forEach(function(item) {
+      if(item.id == stateId) {
+
+        stateSelected = <VotingInfo 
+        key={item.id}
         state={item.state}
         generalDate={item.generalDate}
         earlyVoting={item.earlyVoting}
@@ -34,11 +38,14 @@ class Dropdown extends React.Component {
         absenteeRequestDeadline={item.absenteeRequestDeadline}
         absenteeReturnDeadline={item.absenteeReturnDeadline}
       />
-    )
+      }
+    })
+    return stateSelected;
+    
   }
 
   render() {
-    
+    const { id } = this.state.id
     return (
       <div className='Dropdown'>
         <h2 className='dropdown-text'>HOW TO VOTE IN YOUR STATE</h2>
@@ -60,7 +67,7 @@ class Dropdown extends React.Component {
 
             )}
           </select>
-          {this.renderVotingInfo()}
+          {this.renderVotingInfo(id)}
         </form>
       </div>
     )
