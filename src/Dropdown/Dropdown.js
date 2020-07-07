@@ -9,33 +9,41 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      state: '' 
+      selectedState: '' 
     }
   }
 
-  handleSubmit = (e) => {
+  handleChange = (e) => {
     e.preventDefault()
-    const { selected_state } = e.target
     this.setState({
-      state: selected_state
+      selectedState: e.target.value
     })
   }
 
   render() {
-    
+    const selectedState = this.state.selectedState;
     
     return (
       <div className='Dropdown'>
         <h2 className='dropdown-text'>HOW TO VOTE IN YOUR STATE</h2>
-        <label for='state'>Choose your state:</label>
-        <form ref='form' onSubmit={this.handleSubmit}>
-          <select name='states' id='states'>
-            {StateInfo.map(state => 
-              <option name='selected_state' value={state.state}>{state.state}</option>
+        <label htmlFor='state'>Choose your state:</label>
+        <form ref='form'>
+          <select 
+            className='dropdown-state' 
+            name='states' id='states' 
+            onChange={this.handleChange}
+          >
+            {StateInfo.map((state, index) => 
+              <option 
+                name='selected_state' 
+                value={state.state}
+                key={index}
+              >
+                {state.state}
+              </option>
             )}
           </select>
-          <button type='button' className='search-button'>Search</button>
-          <VotingInfo state={this.state.state}/>
+          <VotingInfo state={selectedState}/>
         </form>
       </div>
     )

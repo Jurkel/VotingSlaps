@@ -4,7 +4,7 @@ import './VotingInfo.css'
 function VotingInfo(props) {
   return (
     <div className='VotingInfo'>
-      <p>{props.children}</p>
+      <p>{props.state}</p>
     </div>
   )
 }
