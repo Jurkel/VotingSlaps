@@ -1,4 +1,6 @@
 .VotingInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 2px solid #FF8E8E;
   border-radius: 15px;
   width: 75%;

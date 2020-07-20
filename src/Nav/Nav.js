@@ -1,9 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import Home from '../Home/Home'
-// import GetInformed from '../Get-Informed/Get-Informed'
-// import HowToVote from '../How-To-Vote/How-To-Vote'
-// import Register from '../Register/Register'
+import logo from '../Resources/Logo.png'
 import './Nav.css'
 
 function Nav() {
@@ -11,7 +8,7 @@ function Nav() {
     <div>
     <nav className='Nav-Bar'>
         
-          <img className='Logo-Image' src='../Resources/Logo.png' alt='votingslaps-logo'></img>
+          <img className='Logo-Image' src={logo} alt='votingslaps-logo'></img>
             <ul>
               <li>
                 <NavLink 

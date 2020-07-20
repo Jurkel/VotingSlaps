@@ -2,16 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Chart from '../Chart/Chart'
 import './Landing.css'
+import problemSolving from '../Resources/Problem-solving.png'
+import votingIllustration from '../Resources/Voting-Illustration.png'
 
 function Landing() {
   return (
       <div className='LandingPage'>
         <div className='Landing-text'>
           <div className='landing-image'>
-            <img src='../Resources/Voting-Illustration.png' alt='voting-illustration' />
+            <img className='voting-image' src={votingIllustration} alt='voting-illustration' />
           </div>
           <div className='landing-info'>
-            <h2>GET INFORMED</h2>
+            <h2>GET <br/> INFORMED</h2>
+            
             <Link to='/get-informed'>
               <button type='button' className='start-button'>
                 Start Here
@@ -27,7 +30,10 @@ function Landing() {
         <div className='movement-info'>
           <h2>Start a movement</h2>
           <button>Get Involved</button>
-          <img src='../Resources/Problem-solving.png' alt='problem-solving'></img>
+          <br/>
+          <img className='problem-solving' src={problemSolving} alt='problem-solving'></img>
+          
+          
         </div>
       </div>
   )
