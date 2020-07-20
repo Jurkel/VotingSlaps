@@ -1,7 +1,16 @@
 .LandingPage {
-  height: 550px;
-  background-color: rgb(75, 75, 75);
+  height: 1000px;
+  background-image: url('../Resources/BG-shape.png');
   width: 100%;
+}
+
+.Landing-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .Chart {
@@ -23,4 +32,8 @@ h2 {
 .start-button {
   margin-top: 2%;
   padding: 5px;
+}
+
+.movement-info {
+  color: white;
 }

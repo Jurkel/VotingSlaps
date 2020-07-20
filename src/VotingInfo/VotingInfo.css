@@ -1,7 +1,7 @@
 .VotingInfo {
-  border: 2px solid black;
+  border: 2px solid #FF8E8E;
   border-radius: 15px;
-  width: 40%;
+  width: 75%;
   height: 550px;
   text-align: left;
   margin-right: auto;
