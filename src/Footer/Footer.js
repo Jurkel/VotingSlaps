@@ -7,7 +7,7 @@ function Footer() {
     <div className='Footer'>
       <Link to='/register'>
           <button type='button' className='register-button'>
-            Register to Vote!
+            Register
           </button>
         </Link>
     </div>

@@ -51,11 +51,6 @@ h2 {
   color: white;
 }
 
-.start-button {
-  margin-top: 2%;
-  padding: 5px;
-}
-
 .movement-info {
   position: relative;
   top: 29%;
@@ -70,4 +65,16 @@ h2 {
 .problem-solving {
   max-height: 300px;
   max-width: 350px;
+}
+
+button {
+  background-color: #4B5BED;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: .95em;
+  border-radius: 5px;
+  border-style: none;
 }

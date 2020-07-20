@@ -32,7 +32,10 @@ function Landing() {
 
         <div className='movement-info'>
           <h2>Start a movement</h2>
-          <button>Get Involved</button>
+          <Link to='/get-involved'>
+            <button>Get Involved</button>
+          </Link>
+          
           <br/>
           <img 
             className='problem-solving' 
