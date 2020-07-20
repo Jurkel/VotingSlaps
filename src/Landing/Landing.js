@@ -10,7 +10,10 @@ function Landing() {
       <div className='LandingPage'>
         <div className='Landing-text'>
           <div className='landing-image'>
-            <img className='voting-image' src={votingIllustration} alt='voting-illustration' />
+            <img 
+              className='voting-image' 
+              src={votingIllustration} 
+              alt='voting-illustration' />
           </div>
           <div className='landing-info'>
             <h2>GET <br/> INFORMED</h2>
@@ -31,7 +34,10 @@ function Landing() {
           <h2>Start a movement</h2>
           <button>Get Involved</button>
           <br/>
-          <img className='problem-solving' src={problemSolving} alt='problem-solving'></img>
+          <img 
+            className='problem-solving' 
+            src={problemSolving} 
+            alt='problem-solving'/>
           
           
         </div>

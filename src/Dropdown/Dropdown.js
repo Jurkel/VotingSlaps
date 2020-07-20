@@ -26,7 +26,7 @@ class Dropdown extends React.Component {
     let stateSelected;
     let stateId = this.state.id;
     StateInfo.forEach(function(item) {
-      if(item.id === stateId) {
+      if(item.id == stateId) {
 
         stateSelected = <VotingInfo 
         key={item.id}

@@ -1,13 +1,31 @@
 .VotingInfo {
+  position: block;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
   border: 2px solid #FF8E8E;
   border-radius: 15px;
   width: 75%;
-  height: 550px;
+  height: 350px;
   text-align: left;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 35px;
+  padding: 15px;
+}
+
+.info-left h2 {
+  font-size: 1.4em;
+}
+
+.info-left h3 {
+  font-size: .9em;
+}
+
+.info-right h3 {
+  font-size: 1.1em;
+}
+
+.info-right h4 {
+  font-size: .9em;
 }

@@ -5,5 +5,14 @@
   width: 75%;
   margin-right: auto;
   margin-left: auto;
-  padding: 45px 20px 10px 20px;
+  padding: 15px 20px 10px 20px;
+}
+
+.involved-banner {
+  background-image: url('../Resources/involved-banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  margin-top: 6%;
+  margin-bottom: 4%;
 }

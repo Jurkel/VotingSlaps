@@ -5,7 +5,6 @@ function GetInformed() {
   return (
     <React.Fragment>
       <div className='informed-banner'>
-        Banner Image
       </div>
     
       <div className='informedStats'>
