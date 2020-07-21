@@ -4,7 +4,7 @@ import './Register.css'
 
 function Register() {
   return (
-    <div>
+    <div className='register-form'>
       <h2>Register</h2>
       <Form src="https://qshpuqquonmzkxm.form.io/votereligibility" />
     </div>

@@ -13,3 +13,7 @@ label {
 .dropdown-text {
   color: black;
 }
+
+select {
+  margin: 15px;
+}
