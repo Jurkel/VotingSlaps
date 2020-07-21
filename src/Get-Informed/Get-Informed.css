@@ -12,6 +12,7 @@
 
 .informedStats > li, h2 {
   color: black;
+  text-transform: uppercase;
 }
 
 .informed-banner {
