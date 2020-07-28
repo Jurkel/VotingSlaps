@@ -32,3 +32,20 @@
 .info-right h4 {
   font-size: .9em;
 }
+
+/* .VotingInfo {
+  position: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  border: 2px solid #FF8E8E;
+  border-radius: 15px;
+  width: 75%;
+  height: 450px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  margin-bottom: 110px;
+  padding: 15px;
+} */
