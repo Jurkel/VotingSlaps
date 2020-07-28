@@ -1,8 +1,6 @@
 .VotingInfo {
   position: block;
   border: 2px solid #FF8E8E;
-  display: grid;
-  grid-template-columns: 1fr;
   border-radius: 15px;
   width: 75%;
   height: 650px;
@@ -15,32 +13,65 @@
 }
 
 .info-left h1 {
-  font-size: 1em;
+  font-size: .8em;
   text-transform: uppercase;
 }
 
 .info-left h2 {
-  font-size: .9em;
+  font-size: .7em;
   text-align: left;
+  padding-bottom: 5px;
 }
 
 .info-left h3 {
-  font-size: .8em;
+  font-size: .7em;
 }
 
 .info-right h3 {
-  font-size: .9em;
+  font-size: .7em;
+  font-weight: bold;
 }
 
 .info-right h4 {
-  font-size: .8em;
+  font-size: .7em;
 }
 
 @media screen and (min-width: 480px) {
-  .VotingInfo {
-    position: block;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
-    height: 650px;
+  .info-left h1 {
+    font-size: 1.4em;
+  }
+
+  .info-left h2 {
+    font-size: 1em
+  }
+
+  .info-left h3 {
+    font-size: .9em
+  }
+
+  .info-right h3 {
+    font-size: .9em
+  }
 }
 
+@media screen and (min-width: 780px) {
+  .info-left h1 {
+    font-size: 1.8em;
+  }
+
+  .info-left h2 {
+    font-size: 1.2em
+  }
+
+  .info-left h3 {
+    font-size: 1em
+  }
+
+  .info-right h3 {
+    font-size: .9em
+  }
+
+  .VotingInfo {
+    height: 700px;
+  }
+}
