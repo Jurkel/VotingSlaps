@@ -4,22 +4,24 @@ import logo from '../Resources/Logo.png'
 import './Nav.css'
 
 function Nav() {
+
   return (
     <div>
     <nav className='Nav-Bar'>
         
           <img className='Logo-Image' src={logo} alt='votingslaps-logo'></img>
-            <ul>
+            <div className='hamburger'>
+              <div className='line'></div>
+              <div className='line'></div>
+              <div className='line'></div>
+            </div>
+            <ul className='nav-links'>
               <li>
                 <NavLink 
                   exact to='/' 
                   style={{ 
-                    fontWeight: 'bold', 
                     color: 'black', 
-                    textDecoration: 'none' 
-                  }}
-                  activeStyle={{
-                    textDecoration: 'underline'
+                    textDecoration: 'none',
                   }}
                 >
                   HOME
@@ -29,12 +31,8 @@ function Nav() {
                 <NavLink 
                   to='/get-informed' 
                   style={{ 
-                    fontWeight: 'bold', 
                     color: 'black', 
                     textDecoration: 'none' 
-                  }}
-                  activeStyle={{
-                    textDecoration: 'underline'
                   }}
                 >
                   GET INFORMED
@@ -44,12 +42,8 @@ function Nav() {
                 <NavLink 
                   to='/get-involved'
                   style={{ 
-                    fontWeight: 'bold', 
                     color: 'black', 
                     textDecoration: 'none' 
-                  }}
-                  activeStyle={{
-                    textDecoration: 'underline'
                   }}
                 >
                   GET INVOLVED
@@ -59,12 +53,8 @@ function Nav() {
                 <NavLink 
                   to='/register'  
                   style={{ 
-                    fontWeight: 'bold', 
                     color: 'black', 
                     textDecoration: 'none' 
-                  }}
-                  activeStyle={{
-                    textDecoration: 'underline'
                   }}
                 >
                   REGISTER

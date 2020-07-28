@@ -6,13 +6,20 @@
   max-height: 60%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 435px;
+  margin-bottom: 470px;
   border-radius: 15px;
+  text-align: left;
 }
 
 .informedStats > li, h2 {
   color: black;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.informedStats li {
+  padding: 15px;
+  font-size: 18px;
 }
 
 .informed-banner {

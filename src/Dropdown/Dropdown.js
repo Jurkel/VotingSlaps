@@ -1,7 +1,7 @@
 import React from 'react'
 import VotingInfo from '../VotingInfo/VotingInfo'
 import './Dropdown.css'
-import StateInfo from '../dummy-api'
+import { API_ENDPOINT } from '../config'
 
 
 
@@ -12,6 +12,16 @@ class Dropdown extends React.Component {
       stateInfo: [],
       id: ''
     }
+  }
+
+  componentDidMount() {
+    fetch(`${API_ENDPOINT}`)
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          stateInfo: data
+        })
+      })
   }
 
   handleChange = (e) => {
@@ -25,7 +35,8 @@ class Dropdown extends React.Component {
     console.log(this.state.id);
     let stateSelected;
     let stateId = this.state.id;
-    StateInfo.forEach(function(item) {
+    let regInfo = this.state.stateInfo
+    regInfo.forEach(function(item) {
       if(item.id == stateId) {
 
         stateSelected = <VotingInfo 
@@ -46,6 +57,7 @@ class Dropdown extends React.Component {
 
   render() {
     const { id } = this.state.id
+    const { regInfo } = this.state.stateInfo
     return (
       <div className='Dropdown'>
         <h2 className='dropdown-text'>HOW TO VOTE IN YOUR STATE</h2>
@@ -56,7 +68,7 @@ class Dropdown extends React.Component {
             name='states' id='states' 
             onChange={this.handleChange}
           >
-            {StateInfo.map((state, index) => 
+            {regInfo.map((state, index) => 
               <option 
                 name='selected_state' 
                 value={state.id}
