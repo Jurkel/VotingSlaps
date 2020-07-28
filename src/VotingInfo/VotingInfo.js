@@ -17,9 +17,10 @@ function VotingInfo(props) {
         <h2>Mail In Voter Registration Deadline</h2>
         <h3>{props.registrationDeadlineMail} days before Election Day</h3>
       </div>
+        <hr />
       <div className='info-right'>
         <h3>Deadline to Request an Absentee Ballot Online:</h3>
-        <h4>{props.absenteeRequestDeadlineOnline}</h4>
+        <h4>{props.absenteeRequestDeadlineOnline} days before Election Day</h4>
         <h3>Deadline to Request an Absentee Ballot In Person:</h3>
         <h4>{props.absenteeRequestDeadlineInPerson} days before Election Day</h4>
         <h3>Deadline to Request an Absentee Ballot By Mail:</h3>

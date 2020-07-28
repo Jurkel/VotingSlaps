@@ -1,12 +1,11 @@
 .VotingInfo {
   position: block;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
   border: 2px solid #FF8E8E;
+  display: grid;
+  grid-template-columns: 1fr;
   border-radius: 15px;
   width: 75%;
-  height: 450px;
+  height: 650px;
   text-align: left;
   margin-right: auto;
   margin-left: auto;
@@ -15,37 +14,33 @@
   padding: 15px;
 }
 
+.info-left h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 .info-left h2 {
-  font-size: 1.1em;
-  padding-bottom: 15px;
+  font-size: .9em;
   text-align: left;
 }
 
 .info-left h3 {
-  font-size: .9em;
+  font-size: .8em;
 }
 
 .info-right h3 {
-  font-size: 1.1em;
-}
-
-.info-right h4 {
   font-size: .9em;
 }
 
-/* .VotingInfo {
-  position: block;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
-  border: 2px solid #FF8E8E;
-  border-radius: 15px;
-  width: 75%;
-  height: 450px;
-  text-align: left;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 35px;
-  margin-bottom: 110px;
-  padding: 15px;
-} */
+.info-right h4 {
+  font-size: .8em;
+}
+
+@media screen and (min-width: 480px) {
+  .VotingInfo {
+    position: block;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    height: 650px;
+}
+

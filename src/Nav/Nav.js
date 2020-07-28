@@ -22,6 +22,7 @@ function Nav() {
                   style={{ 
                     color: 'black', 
                     textDecoration: 'none',
+                    fontSize: '12px'
                   }}
                 >
                   HOME
@@ -32,7 +33,8 @@ function Nav() {
                   to='/get-informed' 
                   style={{ 
                     color: 'black', 
-                    textDecoration: 'none' 
+                    textDecoration: 'none',
+                    fontSize: '12px'
                   }}
                 >
                   GET INFORMED
@@ -43,7 +45,8 @@ function Nav() {
                   to='/get-involved'
                   style={{ 
                     color: 'black', 
-                    textDecoration: 'none' 
+                    textDecoration: 'none',
+                    fontSize: '12px'
                   }}
                 >
                   GET INVOLVED
@@ -54,7 +57,8 @@ function Nav() {
                   to='/register'  
                   style={{ 
                     color: 'black', 
-                    textDecoration: 'none' 
+                    textDecoration: 'none',
+                    fontSize: '12px'
                   }}
                 >
                   REGISTER

@@ -9,30 +9,30 @@
 
 .Landing-text {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   column-gap: 15px;
   position: absolute;
   left: 50%;
-  margin-left: -29%;
+  margin-left: -21%;
 }
 
 .landing-info  {
   color: white;
-  margin-top: 45px;
   margin-left: 25px;
   text-align: left;
 }
 
 .landing-info h2 {
   color: white;
-  font-size: 1.9em;
+  font-size: 1.1em;
   font-weight: bold;
+  margin-right: 35px;
 }
 
 .voting-image {
-  max-height: 300px;
-  max-width: 350px;
+  max-height: 150px;
+  max-width: 200px;
 }
 
 .Chart {
@@ -78,3 +78,13 @@ button {
   border-radius: 5px;
   border-style: none;
 }
+
+/* .Landing-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 15px;
+  position: absolute;
+  left: 50%;
+  margin-left: -29%;
+} */
