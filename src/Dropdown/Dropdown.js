@@ -15,13 +15,15 @@ class Dropdown extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`${API_ENDPOINT}`)
+    fetch(`${API_ENDPOINT}/registration`)
       .then(res => res.json())
       .then(data => {
+        console.log(data)
         this.setState({
           stateInfo: data
         })
       })
+      
   }
 
   handleChange = (e) => {
@@ -32,40 +34,52 @@ class Dropdown extends React.Component {
   }
 
   renderVotingInfo = (id) => {
+
     console.log(this.state.id);
+
     let stateSelected;
     let stateId = this.state.id;
     let regInfo = this.state.stateInfo
+
     regInfo.forEach(function(item) {
       if(item.id == stateId) {
 
         stateSelected = <VotingInfo 
-        key={item.id}
-        state={item.state}
-        generalDate={item.generalDate}
-        earlyVoting={item.earlyVoting}
-        absenteeVoting={item.absenteeVoting}
-        registrationDeadline={item.registrationDeadline}
-        absenteeRequestDeadline={item.absenteeRequestDeadline}
-        absenteeReturnDeadline={item.absenteeReturnDeadline}
-      />
+          key={item.id}
+          state={item.statefull}
+          generalDate={item.generalvoting}
+          earlyVoting={item.earlyvoting}
+          absenteeVoting={item.absenteevoting}
+          registrationDeadlineOnline={item.registrationdeadlineonline}
+          registrationDeadlineInPerson={item.registrationdeadlineinperson}
+          registrationDeadlineMail={item.registrationdeadlinemail}
+          absenteeRequestDeadlineOnline={item.absenteerequestdeadlineonline}
+          absenteeRequestDeadlineInPerson={item.absenteerequestdeadlineinperson}
+          absenteeRequestDeadlineMail={item.absenteerequestdeadlinemail}
+          absenteeReturnDeadline={item.absenteereturndeadline}
+        />
       }
     })
     return stateSelected;
-    
   }
 
   render() {
+
+    
+
     const { id } = this.state.id
-    const { regInfo } = this.state.stateInfo
+    const regInfo  = this.state.stateInfo
+
     return (
+
       <div className='Dropdown'>
         <h2 className='dropdown-text'>HOW TO VOTE IN YOUR STATE</h2>
         <label htmlFor='state'>Choose your state:</label>
         <form ref='form'>
           <select 
             className='dropdown-state' 
-            name='states' id='states' 
+            name='states' 
+            id='states' 
             onChange={this.handleChange}
           >
             {regInfo.map((state, index) => 
@@ -74,9 +88,8 @@ class Dropdown extends React.Component {
                 value={state.id}
                 key={index}
               >
-                {state.state}
+                {state.statefull}
               </option>
-
             )}
           </select>
           {this.renderVotingInfo(id)}

@@ -6,7 +6,7 @@
   border: 2px solid #FF8E8E;
   border-radius: 15px;
   width: 75%;
-  height: 350px;
+  height: 450px;
   text-align: left;
   margin-right: auto;
   margin-left: auto;
@@ -16,7 +16,9 @@
 }
 
 .info-left h2 {
-  font-size: 1.4em;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+  text-align: left;
 }
 
 .info-left h3 {
