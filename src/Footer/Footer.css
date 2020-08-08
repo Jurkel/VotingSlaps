@@ -1,6 +1,7 @@
 .Footer {
   background: url('../Resources/Footer-bg.png');
   background-color: white;
+  background-size: cover;
   width: 100%;
   height: 125px;
   margin-top: 55px;
