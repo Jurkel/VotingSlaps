@@ -27,3 +27,28 @@
   padding-right: 10px;
 }
 
+.bm-burger-button {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  right: 40px;
+  top: 40px;
+}
+
+.bm-burger-bars {
+  background: black;
+  border-radius: 5px;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  text-transform: uppercase;
+}

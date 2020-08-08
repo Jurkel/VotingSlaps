@@ -1,0 +1,14 @@
+.chart-container {
+  max-height: 400px;
+  max-width: 575px;
+  min-height: 200px;
+  min-width: 300px;
+  border-radius: 15px;
+}
+
+.chart {
+  max-height: 200px;
+  max-width: 350px;
+  min-height: 100px;
+  min-width: 200px;
+}

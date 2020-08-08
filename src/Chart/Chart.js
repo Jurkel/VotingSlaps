@@ -1,4 +1,5 @@
 import React from 'react'
+import chart from '../Resources/Age-Chart.png'
 import './Chart.css'
 
 class Chart extends React.Component {
@@ -56,8 +57,9 @@ class Chart extends React.Component {
     //         });
     //     }
     return (
-      <div>
-        <h2>Chart goes here</h2>
+      <div className='chart-container'>
+        <h2>Turnout By Age</h2>
+        <img className='chart' src={chart} alt='turnout-by-age' />
       </div>
     )
   }
