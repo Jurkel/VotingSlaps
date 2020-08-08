@@ -5,4 +5,4 @@
 
 ## Screenshots
 
-![Home Page](https://imgur.com/kvPzpKb) ![Register Page](https://imgur.com/Y1O62UI) 
+![HomePage](https://i.imgur.com/kvPzpKb.png) ![Register](https://i.imgur.com/Y1O62UI.png)
