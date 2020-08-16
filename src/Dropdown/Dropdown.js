@@ -18,7 +18,6 @@ class Dropdown extends React.Component {
     fetch(`${API_ENDPOINT}/registration`)
       .then(res => res.json())
       .then(data => {
-        console.log(data)
         this.setState({
           stateInfo: data
         })
@@ -35,7 +34,6 @@ class Dropdown extends React.Component {
 
   renderVotingInfo = (id) => {
 
-    console.log(this.state.id);
 
     let stateSelected;
     let stateId = this.state.id;

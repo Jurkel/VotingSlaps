@@ -13,7 +13,7 @@ function GetInvolved() {
         <h3>Help Register Voters</h3>
         <p>Be active in the community! Hold gatherings and events with others to spread the word to other young voters about the importance of making your voice heard. Your vote matters!</p>
         <h3>Call Your Elected Officials</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Do some research and find out who your elected officials are. Contact them and tell them you're interested in setting up an event that will propel young voters to come out to the polls on the Nov 3!</p>
       </div>
     </div>
     
