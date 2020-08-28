@@ -33,3 +33,20 @@
   width: 100%;
   margin-top: 25px;
 }
+
+/* .alert-success, .help-block {
+  margin: 5%;
+  color: red;
+  font-weight: bold;
+} */
+
+.error, .red {
+  color: red;
+  font-weight: bold;
+}
+
+.hover-btn > .hover-btn:hover {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+}
