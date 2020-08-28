@@ -16,10 +16,11 @@ class Footer extends Component {
   }
 
   renderButton = () => {
-    return (this.state.showRegisterButton ? 
+    return (window.location.pathname == '/register' ? 
+      '' : 
       <button type='button' className='register-button' onClick={() => this.hideButton()}>
         Register
-      </button> : '')
+      </button> )
   }
 
   render() {

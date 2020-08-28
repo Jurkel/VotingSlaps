@@ -16,7 +16,6 @@ class Register extends React.Component {
  
 
   isAbleToVote = (submission) => {
-   // console.log('sub: ' + submission);
     let count = 0;
     for(const question in submission.data) {
         if(question === 'areYouAUSCitizen' && submission.data[question] === 'yes') {
@@ -34,10 +33,8 @@ class Register extends React.Component {
         }
     }
     if(count === 6) {
-        //console.log('open modal to say user is eligible to register to vote');
         return alert(`You're eligible to vote!`)
     } else {
-        // console.log('open modal to say user is not eligible to register to vote');
         return alert(`You're not eligible to vote!`)
     }
   }
@@ -61,7 +58,6 @@ class Register extends React.Component {
           options={noAlertOption}
           src="https://qshpuqquonmzkxm.form.io/votereligibility" 
           onSubmit={this.isAbleToVote} 
-          onError={console.log}
           />
       </div>
     )
