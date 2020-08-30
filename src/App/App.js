@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home/Home'
 import Nav from '../Nav/Nav'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import './App.css'
 import Footer from '../Footer/Footer'
 import GetInformed from '../Get-Informed/Get-Informed'
@@ -16,20 +16,21 @@ class App extends Component {
             <Nav />
           </header>
           <main>
-            <Switch>
-              <Route exact path='/'>
-                <Home />
-              </Route>
-              <Route path='/get-informed'>
-                <GetInformed />  
-              </Route> 
-              <Route path='/get-involved'>
-                <GetInvolved />
-              </Route>
-              <Route path='/register'>
-                <Register />
-              </Route>
-            </Switch>
+              <Switch>
+                <Route exact path='/'>
+                  <Home />
+                </Route>
+                <Route path='/get-informed'>
+                  <GetInformed />  
+                </Route> 
+                <Route path='/get-involved'>
+                  <GetInvolved />
+                </Route>
+                <Route path='/register'>
+                  <Register />
+                </Route>
+              </Switch>
+            
           </main>
           <footer>
             <Footer />

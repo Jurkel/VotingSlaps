@@ -8,7 +8,7 @@ function VotingInfo(props) {
         <h1>{props.state} General Election</h1>
         <h2>{props.generalDate}</h2>
         <h3>Early Voting: Deadline - {props.earlyVoting} days before Election Day</h3>
-        <h3>In-Person Absentee Voting: {props.absenteeVoting.toString()}</h3>
+        <h3>In-Person Absentee Voting: {props.absenteeVoting}</h3>
         <hr />
         <h2>In Person Voter Registration Deadline</h2>
         <h3>{props.registrationDeadlineInPerson} days before Election Day</h3>
